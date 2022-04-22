@@ -2,22 +2,22 @@ from pypresence import Presence
 import time 
 
 start = int(time.time())
-client_id = ""
+client_id = "id client here"
 RPC = Presence(client_id)
 RPC.connect()
 
 while True:
     RPC.update(
-        large_image = "algo",
-        small_image = "programming",
-        large_text = "ALGO TO THE MOON",
-        small_text = "Programming",
-        state = "Just thinking...",
+        large_image = "Name of image",
+        small_image = "Name of image",
+        large_text = "hover text",
+        small_text = "hover text",
+        state = "state",
         start = start,
         pid = 1,
-        details = "I'm a Programmer and Coding is my life",
-        buttons = [ { "label":"Algo in YouTube","url":"https://www.youtube.com/watch?v=mDNKfBQfkwA" } ,
-                    { "label":"Algo in Discord","url":"https://discord.gg/y7usVZnG" } ]
+        details = "details",
+        buttons = [ { "label":"Name of first Button","url":"url here" } ,
+                    { "label":"Name of second Button","url":"url here" } ]
     )
     time.sleep(50)
     #print("start")
